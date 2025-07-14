@@ -1,0 +1,203 @@
+[
+  {
+    "id": 1,
+    "title": "Wireless Bluetooth Headphones",
+    "image": "https://www.bhphotovideo.com/images/images2500x2500/skullcandy_s6hbgy_374_hesh_2_bluetooth_headphones_1085703.jpg",
+    "description": "High-quality product with excellent features.",
+    "rating": 4.7,
+    "price": 49.99,
+    "category": "Electronics",
+    "stock": 120
+  },
+  {
+    "id": 2,
+    "title": "Men's Classic Fit T-Shirt",
+    "image": "https://c.shld.net/rpx/i/s/i/spin/-122/prod_1880023612??hei=64&wid=64&qlt=50",
+    "description": "Designed for comfort and performance.",
+    "rating": 4.2,
+    "price": 19.99,
+    "category": "Clothing",
+    "stock": 85
+  },
+  {
+    "id": 3,
+    "title": "Smart Fitness Watch",
+    "image": "https://tse4.mm.bing.net/th/id/OIP.md2pbNWa6KzzIzLAqBVABQHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "description": "Top-rated item for everyday use.",
+    "rating": 4.8,
+    "price": 89.99,
+    "category": "Fitness",
+    "stock": 60
+  },
+  {
+    "id": 4,
+    "title": "Organic Green Tea",
+    "image": "https://images.heb.com/is/image/HEBGrocery/000109545",
+    "description": "Crafted with premium materials for durability.",
+    "rating": 4.3,
+    "price": 14.99,
+    "category": "Grocery",
+    "stock": 200
+  },
+  {
+    "id": 5,
+    "title": "Portable Phone Charger",
+    "image": "https://tse1.mm.bing.net/th/id/OIP.O3T2StvOhdzGCrJuJLB79QHaHa?r=0&w=800&h=800&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "description": "Best value for your money.",
+    "rating": 4.6,
+    "price": 25.99,
+    "category": "Accessories",
+    "stock": 150
+  },
+  {
+    "id": 6,
+    "title": "Ergonomic Office Chair",
+    "image": "https://example.com/images/ergonomic_office_chair.jpg",
+    "description": "Designed for comfort and performance.",
+    "rating": 4.5,
+    "price": 139.99,
+    "category": "Furniture",
+    "stock": 30
+  },
+  {
+    "id": 7,
+    "title": "Noise Cancelling Earbuds",
+    "image": "https://example.com/images/noise_cancelling_earbuds.jpg",
+    "description": "High-quality product with excellent features.",
+    "rating": 4.7,
+    "price": 59.99,
+    "category": "Electronics",
+    "stock": 110
+  },
+  {
+    "id": 8,
+    "title": "Gaming Mechanical Keyboard",
+    "image": "https://example.com/images/gaming_mechanical_keyboard.jpg",
+    "description": "Crafted with premium materials for durability.",
+    "rating": 4.6,
+    "price": 74.99,
+    "category": "Electronics",
+    "stock": 95
+  },
+  {
+    "id": 9,
+    "title": "4K UHD Monitor",
+    "image": "https://example.com/images/4k_uhd_monitor.jpg",
+    "description": "Top-rated item for everyday use.",
+    "rating": 4.8,
+    "price": 199.99,
+    "category": "Electronics",
+    "stock": 40
+  },
+  {
+    "id": 10,
+    "title": "Adjustable Standing Desk",
+    "image": "https://example.com/images/adjustable_standing_desk.jpg",
+    "description": "Designed for comfort and performance.",
+    "rating": 4.7,
+    "price": 179.99,
+    "category": "Furniture",
+    "stock": 25
+  },
+  {
+    "id": 11,
+    "title": "Women's Yoga Pants",
+    "image": "https://example.com/images/womens_yoga_pants.jpg",
+    "description": "Best value for your money.",
+    "rating": 4.5,
+    "price": 29.99,
+    "category": "Clothing",
+    "stock": 150
+  },
+  {
+    "id": 12,
+    "title": "LED Desk Lamp",
+    "image": "https://example.com/images/led_desk_lamp.jpg",
+    "description": "Crafted with premium materials for durability.",
+    "rating": 4.4,
+    "price": 34.99,
+    "category": "Electronics",
+    "stock": 100
+  },
+  {
+    "id": 13,
+    "title": "Bluetooth Speaker",
+    "image": "https://example.com/images/bluetooth_speaker.jpg",
+    "description": "High-quality product with excellent features.",
+    "rating": 4.6,
+    "price": 39.99,
+    "category": "Electronics",
+    "stock": 120
+  },
+  {
+    "id": 14,
+    "title": "Laptop Backpack",
+    "image": "https://example.com/images/laptop_backpack.jpg",
+    "description": "Designed for comfort and performance.",
+    "rating": 4.3,
+    "price": 49.99,
+    "category": "Accessories",
+    "stock": 70
+  },
+  {
+    "id": 15,
+    "title": "Digital Drawing Tablet",
+    "image": "https://example.com/images/digital_drawing_tablet.jpg",
+    "description": "Best value for your money.",
+    "rating": 4.7,
+    "price": 129.99,
+    "category": "Electronics",
+    "stock": 55
+  },
+  {
+    "id": 16,
+    "title": "Stainless Steel Water Bottle",
+    "image": "https://example.com/images/stainless_steel_water_bottle.jpg",
+    "description": "Top-rated item for everyday use.",
+    "rating": 4.6,
+    "price": 22.99,
+    "category": "Accessories",
+    "stock": 140
+  },
+  {
+    "id": 17,
+    "title": "Wireless Mouse",
+    "image": "https://example.com/images/wireless_mouse.jpg",
+    "description": "High-quality product with excellent features.",
+    "rating": 4.5,
+    "price": 17.99,
+    "category": "Electronics",
+    "stock": 160
+  },
+  {
+    "id": 18,
+    "title": "USB-C Hub Adapter",
+    "image": "https://example.com/images/usb-c_hub_adapter.jpg",
+    "description": "Designed for comfort and performance.",
+    "rating": 4.4,
+    "price": 29.99,
+    "category": "Electronics",
+    "stock": 130
+  },
+  {
+    "id": 19,
+    "title": "Smartphone Tripod",
+    "image": "https://example.com/images/smartphone_tripod.jpg",
+    "description": "Best value for your money.",
+    "rating": 4.3,
+    "price": 27.99,
+    "category": "Accessories",
+    "stock": 90
+  },
+  {
+    "id": 20,
+    "title": "Instant Coffee Pack",
+    "image": "https://example.com/images/instant_coffee_pack.jpg",
+    "description": "Top-rated item for everyday use.",
+    "rating": 4.6,
+    "price": 11.99,
+    "category": "Grocery",
+    "stock": 180
+  }
+ 
+]
