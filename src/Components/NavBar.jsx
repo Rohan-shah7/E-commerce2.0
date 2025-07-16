@@ -1,40 +1,41 @@
-import React from "react";
 import { MdShoppingCart, MdSearch } from "react-icons/md";
-import logo from "../assets/logo.png"; 
+import { HiMenu } from "react-icons/hi";
+import logo from "../assets/logo.png";
 
 const NavBar = () => {
   return (
-    <nav className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 shadow-lg py-4 px-6 text-white">
-      <div className="max-w-7xl mx-auto flex items-center justify-between space-x-6">
-        
-        {/* Logo + Text */}
+    <nav className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 shadow-lg text-white sticky top-0 z-50">
+      <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+        {/* Logo */}
         <div className="flex items-center space-x-2">
-          <img src={logo} alt="Logo" className="w-10 h-10 rounded-full" />
-          <div className="text-3xl font-bold text-yellow-300">Ecommerce</div>
+          <img src={logo} alt="Logo" className="h-10 w-auto object-contain" />
+          <span className="text-2xl font-bold">Ecommerce</span>
         </div>
 
-        {/* Search Bar */}
-        <div className="flex items-center bg-white rounded-full overflow-hidden px-3 py-1 text-gray-700 w-64 shadow-inner">
-          <input
-            type="text"
-            placeholder="Search products..."
-            className="outline-none w-full bg-transparent px-2 py-1"
-          />
-          <MdSearch className="text-xl text-gray-500" />
+        {/* Desktop Menu */}
+        <div className="hidden md:flex items-center space-x-8">
+          <a href="#" className="hover:text-blue-200 font-medium">Home</a>
+          <a href="#" className="hover:text-blue-200 font-medium">About</a>
+          <a href="#" className="hover:text-blue-200 font-medium">Contact</a>
+          <MdSearch className="text-2xl cursor-pointer hover:text-blue-200" />
+          <div className="relative">
+            <MdShoppingCart className="text-2xl cursor-pointer hover:text-blue-200" />
+            <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center font-bold">
+              3
+            </span>
+          </div>
         </div>
 
-        {/* Cart Icon */}
-        <a href="#" className="flex items-center gap-1 hover:text-yellow-300 transition text-lg font-medium">
-          <MdShoppingCart className="text-2xl" />
-          Cart
-        </a>
-
-        {/* Navigation Links */}
-        <div className="flex space-x-6 text-lg font-medium">
-          <a href="#" className="hover:text-yellow-300 transition">Home</a>
-          <a href="#" className="hover:text-yellow-300 transition">About Us</a>
-          <a href="#" className="hover:text-yellow-300 transition">Login</a>
-          <a href="#" className="hover:text-yellow-300 transition">Sign Up</a>
+        {/* Mobile Menu Icon */}
+        <div className="md:hidden flex items-center gap-4">
+          <MdSearch className="text-2xl cursor-pointer" />
+          <div className="relative">
+            <MdShoppingCart className="text-2xl cursor-pointer" />
+            <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center font-bold">
+              3
+            </span>
+          </div>
+          <HiMenu className="text-3xl cursor-pointer" />
         </div>
       </div>
     </nav>
