@@ -1,0 +1,58 @@
+import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+
+function Product() {
+  const [products, setProducts] = useState([]);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    fetch("public/website/products.json")
+      .then((res) => res.json())
+      .then((data) => setProducts(data))
+      .catch((err) => console.error("Failed to load products", err));
+  }, []);
+
+  return (
+    <div className="p-6 bg-gray-50 min-h-screen">
+      <h1 className="text-4xl font-extrabold mb-10 text-center text-gray-800">
+        All Products
+      </h1>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        {products.map((product) => (
+          <div
+            key={product.id}
+            className="bg-white border border-gray-300 rounded-xl shadow-lg p-0 flex flex-col transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
+          >
+            <img
+              src={product.image}
+              alt={product.title}
+              className="w-full h-48 object-contain rounded-t-xl"
+            />
+
+            <div className="bg-gradient-to-br from-purple-300 to-purple-100 rounded-b-xl p-5 flex flex-col flex-grow">
+              <h2 className="text-2xl font-bold text-gray-900 mb-1">{product.title}</h2>
+              <p className="text-sm italic text-gray-700 mb-2">{product.category}</p>
+              <p className="text-green-700 font-extrabold text-xl mb-1">${product.price}</p>
+              <p className="text-yellow-500 font-semibold mb-4">⭐ {product.rating}</p>
+
+              <div className="mt-auto flex gap-3">
+                <button
+                  onClick={() => navigate(`/product/${product.id}`)}
+                  className="flex-1 bg-purple-600 text-white py-2 rounded-lg hover:bg-purple-700 transition"
+                >
+                  View Details
+                </button>
+                <button className="flex-1 bg-pink-600 text-white py-2 rounded-lg hover:bg-pink-700 transition">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export default Product;
