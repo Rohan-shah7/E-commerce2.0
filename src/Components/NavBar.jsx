@@ -20,9 +20,7 @@ const NavBar = () => {
           <a href="#" className="hover:text-purple-600 font-medium">
             About
           </a>
-          <a href="#" className="hover:text-purple-600 font-medium">
-            Contact
-          </a>
+          
           <MdSearch className="text-2xl cursor-pointer hover:text-purple-600" />
           <div className="relative">
             <MdShoppingCart className="text-2xl cursor-pointer hover:text-purple-600" />
