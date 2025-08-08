@@ -68,9 +68,30 @@ function ProductDetails() {
           <button 
             className="bg-pink-600 hover:bg-pink-700 text-white px-8 py-3 rounded-lg font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
             onClick={() => {
-              // Add to cart functionality here
-              console.log(`Added ${product.title} to cart`);
-              // You can add actual cart logic here
+              // Add to cart functionality
+              const existingCart = JSON.parse(localStorage.getItem("cartItems")) || [];
+              const existingItem = existingCart.find(item => item.id === product.id);
+              
+              if (existingItem) {
+                // Item already exists, increase quantity
+                existingItem.quantity += 1;
+              } else {
+                // New item, add to cart with quantity 1
+                existingCart.push({
+                  id: product.id,
+                  title: product.title,
+                  price: product.price,
+                  image: product.image,
+                  quantity: 1
+                });
+              }
+              
+              localStorage.setItem("cartItems", JSON.stringify(existingCart));
+              
+              // Trigger storage event to update cart count in NavBar
+              window.dispatchEvent(new Event('storage'));
+              
+              alert(`${product.title} added to cart!`);
             }}
           >
             Add to Cart
